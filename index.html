@@ -5,8 +5,118 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+     <script> 
+           function start() {
+oppstart();
+spraakeksempel();
+        }
+  window.onload= start;
+
+    function spraakeksempel() { 
+ document.getElementById("1stland").onchange = visSpraak;
+        }
+        
+        function visSpraak() {
+            document.getElementById("melding").innerHTML = "da snakker du mest sannsynlig " + document.getElementById("1stland").value;
+        }
+
+                            function oppstart() { 
+                SkrivUtHilsen();
+                          } 
+
+                function SkrivUtHilsen() {
+                    alert("Hei hei :)");
+                }
+                </script> 
+                <style>
+                    ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  padding: 8px;
+  background-color: #dddddd;
+}
+
+                </style>
 </head>
 <body>
-   <p>hello world</p> 
-</body>
+    <ul>
+        <li><a href="index.html">Funksjoner basics</a></li>
+        <li><a href="Funksjonermoderat.html">Functions moderate</a></li>
+      </ul>
+
+      <p>Velkommen til min nettside om funksjoner, den første tingen som du kanskje så da du gikk inn på denne nettsiden var at du fikk en notifikasjon.</p>
+      <p>Dette gjør vi med hjelp av</p> <h1>FUNKSJONER</h1> <p>en funksjon er en del kode som brukes for å utføre en spesifikk oppgave.</p>
+     
+      <figure>
+        <img src="img/tools.jpg" width="400" alt="tools"/>
+        <figcaption class= "bildetekst">bilde fra: https://www.istockphoto.com/photos/tools</figcaption>
+      </figure>
+      
+      <p>Som et eksempel for å lage en sånn notifikasjon når du starter siden din så trenger du bare å skrive ned dette:</p>
+      <code> &lt;script&gt;
+window onload = oppstart;
+
+function oppstart() {
+    (skriv ned navnet til din funksjon her)();
+}
+
+function (funksjonen som du skrev ned)() {
+    alert("det er her der man skriver ned notifikasjonen din")
+}
+
+      &lt;/script&gt; </code>
+     <p>Dette er en veldig enkel måte å lage en notifikasjon da du starter siden din.</p>
+     <p>Nå skal vi se på et annet ganske grunnleggende eksempel.</p>
+     <p>Hvis du skriver ned denne koden så kan du enkelt lage en side der du kan se hvilket språk som du mest sannsynligvis snakker når du er fra ett land</p>
+     <code>
+         &lt;head&gt;
+           &lt;script&gt;
+               window.onload = oppstart; 
+                    
+                                function oppstart() { 
+             document.getElementById("1stland").onchange = visSpraak;
+                    }
+                    
+                    function visSpraak() {
+                        document.getElementById("melding").innerHTML = "da snakker du mest sannsynlig " + document.getElementById("1stland").value;
+                    }
+                    &lt;/script&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                    &lt;p&gt;hvilket land er du fra? &lt;/&gt;
+                    &lt;select id="1stland"&gt;
+                    &lt;option value="norsk"&gt;Norge &lt;/option&gt;
+                    &lt;option value="svensk"&gt;Sverige &lt;/option&gt;
+                    &lt;option value="dansk"&gt;Danmark &lt;/option&gt;
+                    &lt;option value="finsk"&gt;Finland &lt;/option&gt;
+                    &lt;/select&gt;
+                    &lt;p id="melding"&gt; &lt;/p&gt;
+                &lt;/body&gt;
+ </code>
+ <p>Når du skriver ned det får du dette under:</p>
+ <p>hvilket land er du fra?</p>
+ <select id="1stland">
+ <option value="norsk">Norge</option>
+ <option value="svensk">Sverige</option>
+ <option value="dansk">Danmark</option>
+ <option value="finsk">Finland</option>
+</select>
+ <p id="melding"></p>
+
+ <p>for å forklare litt av koden så kan du se at i script tagget så definerer vi først noen ting. Som du kan se så har vi lagd 2 ID's og 2 funksjoner. vi bruker IDene for å hente hva du velger i valg felter </p>
+ <p>og for å vise hvor det skal skrives ut en melding senere. Den første funksjonen bruker vi så når en av valgene i valgboksen blir valgt så aktiveres den andre funksjonen.</p>
+ <p>Den andre funksjonen gjør at du skriver ut en setning basert på hva du valgte. Som du kanskje har sett så ga vi alle valgene en "value" den valuen er en av ordene som vi skriver ut i den andre funksjonen.</p>
+<p></p>
+
+    </body>
 </html>

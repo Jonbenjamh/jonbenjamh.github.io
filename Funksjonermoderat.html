@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <script> 
+   window.onload = start; 
+
+function start() {
+    oppstart();
+
+}
+        
+                    function oppstart() { 
+                  } 
+        function Random() {
+        var rnd = Math.floor(Math.random() * 1000000000);
+        document.getElementById('tb').value = rnd;
+    }
+
+        </script> 
+              <style>
+                .navbarul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+}
+
+.navbarli  {
+float: left;
+}
+
+.navbarli {
+display: block;
+padding: 8px;
+background-color: #dddddd;
+}
+
+            </style>
+</head>
+<body>
+    <ul class="navbarul">
+        <li><a class="navbarli" href="index.html">Funksjoner basics</a></li>
+        <li><a class="navbarli"href="Funksjonermoderat.html">Functions moderate</a></li>
+      </ul>
+    <p>Nå skal vi drive med litt vanskeligere</p>
+    <h1>FUNKSJONER 2</h1>
+    <p>Det første jeg vil vise er funksjoner som returnerer verdier. hvis du kopierer koden under her så kan du se ett grunnlegende eksempel</p>
+    <code>&lt;p id="demo">&lt;/p&gt;
+
+        &lt;script&gt;
+        function myFunction(p1, p2) {
+          return p1 * p2;
+        }
+        document.getElementById("demo").innerHTML = myFunction(4, 3);
+        &lt;/script&gt;</code>
+        <p>fordi vi har skrevet at vi skal gange p1 og p2 sammen, og p1=4 og p2=3 så ser vi at under så får vi returnert svaret 12.</p>
+        <p>Dette gjør så at vi ikke må få svaret i en meldingsboks hver eneste gang, så vi bare returnerer det rett her i steden.</p>
+        <p>Nå skal jeg nevne også forskjellen mellom globale og lokale variabler. Variabler som blir lagd utenfor en funksjon er en global variabel, en funksjon som blir lagd inne i en funksjon er kalt en lokal variabel.</p>
+       <h1>Matematikk relaterte funksjoner</h1>
+       <figure>
+         <img src="img/dice.png" width="400" alt="dice"/>
+         <figcaption class= "bildetekst">bilde fra: https://www.pngitem.com/middle/wwwoh_d-d-dice-png-d-d-dice-transparent/</figcaption>
+       </figure>
+        <p>JavaScript har en del innebygde funksjoner for hovedsakelig matematikk, for eksempel</p>
+        <code> var roten = math.sqrt(16);</code>
+        <p>math.sqrt gir deg kvadratroten av et tall, som i dette tilfellet er 16 som gir deg tallet 4.</p>
+        <p>Det finnes også mange andre matte relaterte funksjoner som math.round (som avrunder tall for deg) eller math.pow som kan returnere tall opphøyd i andre tall for deg.</p>
+        <p>Du kan også bruke en funksjon for å gi deg et tilfeldig tall. Funksjonen math.random(); vil gi deg ett tilfeldig tall.</p>
+        <form name="rn">
+          <input type="text" id="tb" name="tb" />
+          <input type="button" value="Trykk her for en tilfeldig nummer!" onclick="Random();" />
+      </form>
+      <p>Her er noen mattefunksjoner som man kan bruke i koden din</p>
+      <ul>
+        <li>Math.pow(tall1, tall2</li>
+        <dd>Returner det første tallet opphøyd i det andre tallet</dd>
+        <li>Math.round(tall)</li>
+        <dd>avrunder tallet</dd>
+        <li>Math.floor(tall)</li>
+        <dd>runder tallet ned</dd>
+        <li>math.ceil(tall)</li>
+        <dd>runder tallet opp</dd>
+        <li>math.abs(tall)</li>
+        <dd>returnerer absoluttverdien av tallet</dd>
+        <li>math.max(tall1, tall2)</li>
+        <dd>returnerer det største av de to tallene</dd>
+        <li>math.min(Tall1, Tall2)</li>
+        <dd>returnerer det minste av de to tallene</dd>
+        <li>math.sin(a)</li>
+        <dd>returnerer sinus verdien av en vinkel</dd>
+        <li>math.cos(a)</li>
+        <dd>returnerer cosinus verdien av en vinkel</dd>
+        <li>math.atan2(dy, dx)</li>
+        <dd>returnerer vinkelen i radianer som dannes av katetene dx og dy</dd>
+ </ul>
+      <h1>String-funksjoner</h1>
+      <p>Man kan også bruke funksjoner i string-verdier for å forandre tekststrenger.</p>
+      <p>Her er noen eksempler på funksjoner i string-klassen:</p>
+      <ul>
+        <li>subtr</li>
+        <dd>fjerner tekst fra stringen</dd>
+        <li>slice</li>
+        <dd>fungerer likt som subtr men kan også ta negative verdier</dd>
+        <li>charAt</li>
+        <dd>returnerer tegnet på angitt indeks</dd>
+        <li>indexOf</li>
+        <dd>leter etter stringen tekst fra startindeks og utover, hvis den blir funnet så returneres posisjonen</dd>
+        <li>lastIndexOf</li>
+        <dd>samme funksjon som indexof men vi leter fra høyre til venstre</dd>
+        <li>split</li>
+        <dd>splitter opp stringen og returnerer som en array</dd>
+        <li>replace</li>
+        <dd>erstatter alle forekomster av søkestrreng med en erstatning</dd>
+        <li>toLowerCase</li>
+        <dd>returnerer en string med alle tegnene i små bokstaver</dd>
+        <li>toUpperCase</li>
+        <dd>returnerer en string med alle tegnene i store bokstaver</dd>
+        <li>charCodeAt</li>
+        <dd>returnerer tegnkoden til tegnet med angitt indeks. alle tegn har en tegnkode som brukes internt i PC-en</dd>
+        <li>fromCharCode</li>
+        <dd>returnerer tegnet som ligger bak tegnkoden. Denne funksjonen benyttes på string-objektet, da den ikke krever at du har en string fra før.</dd>
+      </ul>
+      <p></p>
+</body>
+</html>
